@@ -3,8 +3,9 @@ with open('/Users/aabitokh/Desktop/repo/Assir-Bitokhov/advent_of_code/day_6/inpu
 
 ans = []
 line_check = []
+n = 14 #4 for part 1
 for num, el in enumerate(input_file):
-    if num < 4: 
+    if num < n: 
         print(num, el)
         line_check.append(el)
     else: 
