@@ -1,4 +1,8 @@
 
-.DS_Store
-.csv
-.tsv
+*.DS_Store
+*.csv
+*.tsv
+*.xlsx
+*.json
+*.tfevents
+prediction
