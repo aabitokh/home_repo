@@ -6,3 +6,6 @@
 *.json
 *.tfevents
 prediction
+*.env
+.vscode/
+venv/
