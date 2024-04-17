@@ -1,12 +1,15 @@
 import requests
 import time
 import os 
+from dotenv import load_dotenv
 
-token = os.environ['TOKEN']
-
+#token = os.environ['TOKEN']
+load_dotenv()
 
 API_URL = 'https://api.telegram.org/bot'
-BOT_TOKEN = os.environ['TOKEN']
+BOT_TOKEN = os.getenv("TOKEN")
+
+
 TEXT = 'Ура! Классный апдейт!'
 MAX_COUNTER = 100
 
@@ -19,8 +22,12 @@ if __name__ == '__main__':
     while counter < MAX_COUNTER:
 
         print('attempt =', counter)  #Чтобы видеть в консоли, что код живет
+        print(BOT_TOKEN)
 
         updates = requests.get(f'{API_URL}{BOT_TOKEN}/getUpdates?offset={offset + 1}').json()
+
+        print(updates)
+
 
         if updates['result']:
             for result in updates['result']:
