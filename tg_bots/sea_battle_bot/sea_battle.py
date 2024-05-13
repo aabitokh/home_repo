@@ -19,11 +19,11 @@ logger.info('Starting bot')
 
 # Вместо BOT TOKEN HERE нужно вставить токен вашего бота,
 # полученный у @BotFather
-#BOT_TOKEN = 'BOT TOKEN HERE'
+BOT_TOKEN = 'BOT TOKEN HERE'
 
 
 
-BOT_TOKEN = '6468789742:AAFJ8_UTq11OpazNTpovmQcv1FLXnbL-G4Q'
+
 
 # Создаем объекты бота и диспетчера
 bot = Bot(token=BOT_TOKEN)
